@@ -1,4 +1,4 @@
-FROM overv/openstreetmap-tile-server
+FROM overv/openstreetmap-tile-server:v1.7.4
 RUN wget http://download.geofabrik.de/asia/iran-latest.osm.pbf -O /data/region.osm.pbf
 RUN /run.sh import
 COPY leaflet.js /var/www/html/leaflet.js
