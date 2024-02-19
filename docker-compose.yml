@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  map:
+    build: .
+    image: open-street-latitudes-longitudes
+    ports:
+      - "8080:80"
+    command: "run"
+
+
